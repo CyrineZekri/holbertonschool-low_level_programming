@@ -1,5 +1,10 @@
 #include<stdio.h>
-int main() {
+/**
+ * main -prints size of each variable type.
+ * Return: 0  
+ */
+int main()
+{
 char charType;
 int intType;
 long int longintType;
