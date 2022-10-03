@@ -5,11 +5,12 @@
  */
 int main(void)
 {
-char c;
+int i;
 
-for (c == 'a'; c == 'z', ++c)
+for (i = 97; i < 123; i++)
 {
-putchar("% c \n", c);
+putchar(i);
 }
 return (0);
 }
+
