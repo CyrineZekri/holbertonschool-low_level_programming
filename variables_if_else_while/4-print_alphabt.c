@@ -6,8 +6,8 @@
 int main(void)
 
 {
-	char i;
-	for (i >= 91; i <= 122; i++)
+	int i;
+	for (i = 97; i <= 122; i++)
 	{
 		if ((i != 'e') && (i != 'q'))
 			putchar(i);
