@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isalpha - returns 1 if c is character otherwise 0.
+ *@c: variable input
+ * Return: 0 or 1.
  */
 
 int _isalpha(int c)
