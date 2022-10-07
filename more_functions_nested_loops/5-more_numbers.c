@@ -12,9 +12,9 @@ void more_numbers(void)
 		for (j = 0; j < 15; j++)
 		{
 			if (i < 10)
-			{
+
 				y = i;
-			}
+
 			else
 			{
 				x = i / 10;
