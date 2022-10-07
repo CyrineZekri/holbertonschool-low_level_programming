@@ -1,13 +1,14 @@
 #include "main.h"
 /**
  *print_line - verifies.
+ *@n: input var
  * Return: return 1 if digit or 0 if not
  */
 void print_line(int n)
 {
-	int j;
+	int i;
 
-	for (j = 1; j <= n; j++)
+	for (i = 1; i <= n; i++)
 	{
 		_putchar(' ');
 	}
