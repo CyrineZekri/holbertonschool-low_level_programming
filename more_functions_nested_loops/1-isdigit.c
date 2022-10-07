@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_isupper - s .verifies
+ *_isdigit - verifies.
  * @c: - input var
  * Return: return 1 if digit or 0 if not
  */
