@@ -5,16 +5,15 @@
  */
 void more_numbers(void)
 {
-	int i, j, x, y;
+	char i, j, y, x;
 
-	for (i = 0; i < 10; i++)
+	for (j = 0; j <= 9; j++)
 	{
-		for (j = 0; j <= 14; j++)
+
+		for (i = 0; i <= 14; i++)
 		{
 			if (i < 10)
-
 				y = i;
-
 			else
 			{
 				x = i / 10;
