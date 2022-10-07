@@ -1,17 +1,36 @@
 #include "main.h"
 /**
- *print_last_digit - returns the last digit of a number.
- *@i:variable input
- *Return: last digit.
+ *times_table - prints timetable.
+ *Return: timetable.
  */
 void times_table(void)
 {
-	int i, n;
-	n = 9;
+	int i, j;
 
-	for (i = 1; i <= 10; ++i)
+	for (i = 0; i <= 9; i++)
 	{
-		printf("%d * %d = %d \n", n, i, n * i);
+		for (j = 0; j <= 9; j++)
+		{
+			if (j != 9)
+			{
+				if (i * j > 10)
+				{
+					_putchar(i * j / 10 + '0');
+					_putchar(i * j % 10 + '0');
+					_putchar(',');
+				}
+				else
+				{
+					_putchar(i * j + '0');
+					_putchar(',');
+				}
+			}
+			else
+			{
+				_putchar(i * j / 10 + '0');
+				_putchar(i * j % 10 + '0');
+			}
+		}
+		_putchar('\n');
 	}
-	return 0;
 }
