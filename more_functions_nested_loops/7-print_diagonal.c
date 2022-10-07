@@ -2,12 +2,13 @@
 
 /**
  * print_diagonal - check the code
- *
+ *@n:input value
  * Return: Always 0.
  */
 void print_diagonal(int n)
 {
 	int i, j;
+
 	if (n > 0)
 	{
 		for (i = 0; i < n; i++)
