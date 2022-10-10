@@ -6,21 +6,21 @@
  */
 void puts_half(char *str)
 {
-	int len = strlen(str);
+	int len = strlen(str) - 1;
 	int odd = (len - 1) / 2;
 	int even = len / 2;
 	int i;
 
 	if ((len % 2) == 0)
 	{
-		for (i = even; i <= len; i++)
+		for (i = even + 1; i <= len; i++)
 		{
 			_putchar(str[i]);
 		}
 	}
 	else
 	{
-		for (i = odd; i <= len; i++)
+		for (i = odd + 1; i <= len; i++)
 		{
 			_putchar(str[i]);
 		}
