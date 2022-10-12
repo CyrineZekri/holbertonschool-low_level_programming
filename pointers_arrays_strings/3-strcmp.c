@@ -3,7 +3,7 @@
  * _strcmp - a function that compares two strings.
  *@s1: pointer
  *@s2: pointer
- * Return char
+ * Return 0
  */
 int _strcmp(char *s1, char *s2)
 {
