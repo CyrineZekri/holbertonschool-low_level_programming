@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - a function that concatenates two strings.
+ * *_strncat - a function that concatenates two strings.
  *@dest: pointer
  *@src: pointer
  *@n: pointer
@@ -9,18 +9,15 @@
 char *_strncat(char *dest, char *src, int n)
 {
 
-    int i, j;
-    int len = strlen(src);
+	int i, j;
 
-    for (i = 0; dest[i] != '\0'; i++)
-        ;
-    if (n <= len)
-    {
-        for (j = 0; j < n; j++)
-        {
-            dest[i + j] = src[j];
-        }
-    }
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-    return (dest);
+	for (j = 0; src[j] && j < n; j++)
+	{
+		dest[i + j] = src[j];
+	}
+
+	return (dest);
 }
