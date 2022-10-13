@@ -18,7 +18,7 @@ char *cap_string(char *s)
 			s[0] = j;
 		}
 
-		if (s[i - 1] == ' ' ||
+		else if (s[i - 1] == ' ' ||
 			s[i - 1] == ';' ||
 			s[i - 1] == '.' ||
 			s[i - 1] == '!' ||
