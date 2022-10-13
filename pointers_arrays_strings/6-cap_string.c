@@ -11,7 +11,7 @@ char *cap_string(char *s)
 
 	for (i = 0; i <= len; i++)
 	{
-		s[0] = string_toupper(s[0])
+		
 
 			if (s[i] == ' ' ||
 				s[i] == ';' ||
