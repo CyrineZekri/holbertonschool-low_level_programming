@@ -11,7 +11,7 @@ char *cap_string(char *s)
 
 	for (i = 0; i <= len; i++)
 	{
-		if (s[i] == '\n' ||
+		if (s[i] == ' ' ||
 			s[i] == ';' ||
 			s[i] == '.' ||
 			s[i] == '!' ||
@@ -21,7 +21,7 @@ char *cap_string(char *s)
 			s[i] == '{' ||
 			s[i] == '\t' ||
 			s[i] == '\0' ||
-			s[i] == ' ')
+			s[i] == '\n')
 		{
 			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 			{
