@@ -11,7 +11,7 @@ char *cap_string(char *s)
 
 	for (i = 0; i <= len; i++)
 	{
-		s[0] = s[0] - 32;
+
 		if (s[i] == ' ' ||
 			s[i] == ';' ||
 			s[i] == '.' ||
@@ -30,7 +30,7 @@ char *cap_string(char *s)
 				j -= 32;
 				s[i + 1] = j;
 			}
-		}
+				}
 	}
 	return (s);
 }
