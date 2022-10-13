@@ -9,7 +9,7 @@ char *cap_string(char *s)
 	int i, j;
 	int len = strlen(s);
 
-	for (i = 1; i <= len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (s[i] == '\n' ||
 			s[i] == ';' ||
@@ -23,11 +23,11 @@ char *cap_string(char *s)
 			s[i] == '\0' ||
 			s[i] == ' ')
 		{
-			if (s[i] >= 'a' && s[i] <= 'z')
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 			{
-				j = s[i];
+				j = s[i + 1];
 				j -= 32;
-				s[i] = j;
+				s[i + 1] = j;
 			}
 		}
 	}
