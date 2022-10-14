@@ -1,31 +1,20 @@
-
 #include "main.h"
 /**
- * *_strstr - searches a string for any of a set of bytes
- * @haystack: the address of memory to print
- * @needle: the size of the memory to print
+ * *_strbrk - searches a string for any of a set of bytes
+ * @accept: the address of memory to print
+ * @s: the size of the memory to print
  * Return: int.
  */
-char *_strstr(char *haystack, char *needle)
+char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
-
-	for (i = 0; haystack[i] != '\0'; i++)
+	while (*s != '\0')
 	{
-		for (j = 0; haystack[i] == needle[0]; j++)
-		{
-			if (haystack[i + j] != needle[j])
-				break;
-		}
-
-		if (!needle[j])
-		{
-			return (haystack + i);
-		}
-		else
-		{
-			j = 0;
-		}
+		const char *a = accept;
+		while (*a != '\0')
+			if (*a++ == *s)
+				return (char *)s;
+		++s;
 	}
+
 	return (0);
 }
