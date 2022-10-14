@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strbrk - searches a string for any of a set of bytes
+ * *_strpbrk - searches a string for any of a set of bytes
  * @accept: the address of memory to print
  * @s: the size of the memory to print
  * Return: int.
