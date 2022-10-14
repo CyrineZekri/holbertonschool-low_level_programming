@@ -23,14 +23,14 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 
+			else if (j == len2 && accept[i] != s[j])
+			{
+				break;
+			}
 			else
 			{
 				continue;
 				j++;
-			}
-			if (j == len2 && accept[i] != s[j])
-			{
-				break;
 			}
 		}
 	}
