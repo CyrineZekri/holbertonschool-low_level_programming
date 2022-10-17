@@ -1,12 +1,9 @@
 #include "main.h"
-/**_sqrt_recursion - returns  the natural square root of a number.
- *@n: input variable
- *Return the natural square root.
- */
-/**verif - returns  the square root of a number.
+/**
+ * verif - returns  the square root of a number.
  *@x: input variable
  *@y: input variable
- *Return the natural square root.
+ *Return: int.
  */
 int verif(int x, int y)
 {
@@ -26,6 +23,11 @@ int verif(int x, int y)
 	}
 }
 
+/**
+ * _sqrt_recursion - returns  the natural square root of a number.
+ *@n: input variable
+ *Return:int.
+ */
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
