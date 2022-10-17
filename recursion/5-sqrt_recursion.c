@@ -3,6 +3,11 @@
  *@n: input variable
  *Return the natural square root.
  */
+/**verif - returns  the square root of a number.
+ *@x: input variable
+ *@y: input variable
+ *Return the natural square root.
+ */
 int verif(int x, int y)
 {
 	if (x * x > y)
