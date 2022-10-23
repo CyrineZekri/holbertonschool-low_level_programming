@@ -20,5 +20,4 @@ char *_strdup(char *str)
 		*(string + i) = *(str + i);
 	}
 	return (string);
-	free(string);
 }
