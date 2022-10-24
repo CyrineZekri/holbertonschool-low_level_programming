@@ -8,11 +8,12 @@
 void free_grid(int **grid, int height)
 {
 	int i;
-	int *discharge = NULL;
+	int *discharge;
 
 	for (i = 0; i < height; i++)
 	{
-		discharge = *(grid + i);
+		discharge = grid[i];
 		free(discharge);
 	}
+	free(grid);
 }
