@@ -1,12 +1,15 @@
 #include "main.h"
+
 /**
  ***alloc_grid-fills two dimensional array.
  *@width:input var
  *@height:input var
  *Return:2D array
  */
+
 int **alloc_grid(int width, int height)
 {
+
 	int **grid;
 	int i, j;
 
@@ -23,11 +26,14 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < height; i++)
 	{
-
 		grid[i] = malloc(sizeof(int) * width);
 		if (grid[i] == 0)
 		{
-			return (NULL);
+			for (--i; i >= 0; i--)
+			{
+				free(grid[i]);
+			}
+			free(grid);
 		}
 	}
 	for (i = 0; i < height; i++)
@@ -39,5 +45,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (grid);
-	free(grid);
 }
