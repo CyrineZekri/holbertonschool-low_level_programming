@@ -1,43 +1,23 @@
 #include "main.h"
 /**
- **str_concat-concatenates two strings.
- *@s1:input var
- *@s2:input var
+ **_strdup-creates an identical string.
+ *@str:input var
  *Return: a string
  */
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
 	char *string;
-	int i, j, a, b;
-	int increptr = 0;
+	int size = strlen(str);
+	int i;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
-	for (i = 0; s1[i]; i++)
-	{
-	}
-	for (j = 0; s2[j]; j++)
-	{
-	}
-	string = malloc(sizeof(char) * (i + j + 1));
+	if (str == NULL)
+		return (NULL);
+	string = malloc(sizeof(char) * size + 1);
 	if (string == NULL)
 		return (NULL);
-	for (a = 0; a < i; i++)
+	for (i = 0; i <= size; i++)
 	{
-		*(string + a) = *(s1 + a);
-	}
-	for (b = a; b < j + i; b++)
-	{
-		*(string + j) = *(s2 + increptr);
-		increptr++;
+		*(string + i) = *(str + i);
 	}
 	return (string);
-	free(string);
 }
