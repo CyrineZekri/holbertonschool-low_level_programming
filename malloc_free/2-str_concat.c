@@ -4,20 +4,36 @@
  *@str:input var
  *Return: a string
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-	char *string;
-	int size = strlen(str);
-	int i;
+	char *str;
+	int size1 = strlen(s1);
+	int size2 = strlen(s2);
+	unsigned int sum = size1 + size2;
+	unsigned int i, j;
+	int increptr;
 
-	if (str == NULL)
+	if (s1 == 0)
+		s1 = "";
+
+	if (s2 == 0)
+		s2 = "";
+
+	str = malloc(sizeof(char) * sum + 1);
+
+	if (str == 0)
 		return (NULL);
-	string = malloc(sizeof(char) * size + 1);
-	if (string == NULL)
-		return (NULL);
-	for (i = 0; i <= size; i++)
+
+	for (i = 0; i < strlen(s1); i++)
 	{
-		*(string + i) = *(str + i);
+		*(str + i) = *(s1 + j);
+		j++;
 	}
-	return (string);
+	for (j = i; j < sum + 1; j++)
+	{
+
+		*(str + j) = *(s2 + increptr);
+		increptr++;
+	}
+	return (str);
 }
