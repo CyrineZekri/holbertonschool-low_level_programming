@@ -7,8 +7,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
-	int size1 = strlen(s1);
-	int size2 = strlen(s2);
+	unsigned int size1 = strlen(s1);
+	unsigned int size2 = strlen(s2);
 	unsigned int sum = size1 + size2;
 	unsigned int i, j;
 	int increptr;
@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	if (str == 0)
 		return (NULL);
 
-	for (i = 0; i < strlen(s1); i++)
+	for (i = 0; i < size1; i++)
 	{
 		*(str + i) = *(s1 + j);
 		j++;
