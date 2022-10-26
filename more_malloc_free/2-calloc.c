@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_calloc_checked-allocates memory
+ * *_calloc-allocates memory
  * @nmemb:input var
  * @size:input var
  * Return:void.
