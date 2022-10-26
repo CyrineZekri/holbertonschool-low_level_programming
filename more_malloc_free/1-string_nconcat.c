@@ -4,7 +4,7 @@
  * @s1:input var
  * @s2:input var
  * @n:input var
- * Return: astring.
+ * Return: a string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
