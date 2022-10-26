@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * *string_nconcat-concatenates two strings
- * @s1:input var
+ * @s1:input variable
  * @s2:input var
  * @n:input var
  * Return: a string.
