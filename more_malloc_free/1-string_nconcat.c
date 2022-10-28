@@ -9,7 +9,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *sum;
-	unsigned int len1, len2 = 0, i, j;
+	unsigned int len1, len2, i, j;
 
 	if (s1 == NULL)
 	{
@@ -19,13 +19,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = " ";
 	}
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+	j = 0;
 	if (n > len2)
 	{
 		n = len2;
 	}
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-	j = 0;
 	sum = malloc((len1 + n + 2) * sizeof(char));
 	if (sum == NULL)
 	{
