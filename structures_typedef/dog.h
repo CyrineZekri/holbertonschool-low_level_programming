@@ -2,7 +2,7 @@
 #ifndef HEADERFILE_H
 #define HEADERFILE_H
 /**
- * struct dog - a new structure.
+ * struct dog - new structure.
  * @name:input
  * @age:input
  * @owner:input
