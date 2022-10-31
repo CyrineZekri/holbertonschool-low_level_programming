@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #ifndef HEADERFILE_H
 #define HEADERFILE_H
 /**
@@ -12,4 +13,5 @@ struct dog
 	float age;
 	char *owner;
 };
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
