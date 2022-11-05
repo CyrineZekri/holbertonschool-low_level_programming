@@ -9,13 +9,12 @@
  * @age:input
  * @owner:input
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 } dog_t;
-typedef struct dog dog_t;
 /**
  * struct dog_h -new name for the type dog.
  */
