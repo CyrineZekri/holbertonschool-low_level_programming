@@ -43,6 +43,7 @@ void print_string(va_list liste)
 void print_all(const char *format, ...)
 {
 	int i = 0;
+	char *sp1 = "", *sp2 = ", ";
 	int j = 0;
 
 	va_list args;
@@ -59,9 +60,9 @@ void print_all(const char *format, ...)
 		{
 			if (types[j].s == format[i])
 			{
+				printf("%s ", sp1);
 				types[j].f(args);
-				if (types[j + 1].s)
-					printf(", ");
+				sp1 = sp2;
 			}
 			j++;
 		}

@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-    print_numbers(NULL, 4, 304, 76, 87236, 28376);
+    print_strings("; ", 4, "You know", "", "nothing", NULL);
     return (0);
 }
