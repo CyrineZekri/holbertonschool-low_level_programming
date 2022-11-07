@@ -33,7 +33,8 @@ void print_float(va_list liste)
  */
 void print_string(va_list liste)
 {
-	printf("%s", va_arg(liste, char *));
+	char *x = va_arg(liste, char *);
+	!x ? printf("(nil)") : printf("%s", x);
 }
 /**
  *print_all -prints all formats.
@@ -43,6 +44,7 @@ void print_string(va_list liste)
 void print_all(const char *format, ...)
 {
 	int i = 0;
+
 	char *sp1 = "", *sp2 = ", ";
 	int j = 0;
 
@@ -54,10 +56,11 @@ void print_all(const char *format, ...)
 		{'s', print_string},
 		{'\0', NULL}};
 	va_start(args, format);
-	if (args == NULL)
-		printf("(nil)");
+
+	
 	while (format != NULL && format[i] != '\0')
 	{
+
 		while (types[j].s != '\0')
 		{
 			if (types[j].s == format[i])
