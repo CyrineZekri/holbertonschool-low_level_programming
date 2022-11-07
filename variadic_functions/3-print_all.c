@@ -54,6 +54,8 @@ void print_all(const char *format, ...)
 		{'s', print_string},
 		{'\0', NULL}};
 	va_start(args, format);
+	if (args == NULL)
+		printf("(nil)");
 	while (format != NULL && format[i] != '\0')
 	{
 		while (types[j].s != '\0')
