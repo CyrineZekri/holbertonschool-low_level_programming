@@ -60,7 +60,7 @@ void print_all(const char *format, ...)
 		{
 			if (types[j].s == format[i])
 			{
-				printf("%s ", sp1);
+				printf("%s", sp1);
 				types[j].f(args);
 				sp1 = sp2;
 			}
