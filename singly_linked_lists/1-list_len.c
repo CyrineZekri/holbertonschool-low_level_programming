@@ -6,9 +6,9 @@
  */
 size_t list_len(const list_t *h)
 {
-	int c = 1;
+	int c = 0;
 
-	while (h->next != NULL)
+	while (h)
 	{
 		c++;
 		h = h->next;
