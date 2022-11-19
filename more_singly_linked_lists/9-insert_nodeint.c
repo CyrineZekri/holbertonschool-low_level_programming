@@ -4,7 +4,7 @@
  *@head:pointer to the head node.
  *@idx:index
  *@n:value
- * Return:struct.
+ * Return:structure.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
