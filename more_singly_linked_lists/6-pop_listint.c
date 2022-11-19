@@ -2,7 +2,7 @@
 /**
  *pop_listint- pops an element
  *@head:pointer to the head node.
- * Return:int.
+ * Return:an int.
  */
 int pop_listint(listint_t **head)
 {
