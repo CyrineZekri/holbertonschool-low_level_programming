@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *print_dlistint-prints list
+ *print_dlistint-prints list.
  *@h: head of the list.
  * Return:count.
  */
