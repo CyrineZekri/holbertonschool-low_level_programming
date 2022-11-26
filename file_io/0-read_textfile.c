@@ -7,27 +7,27 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    int file;
-    char *container;
+    int f;
     size_t i;
+    char *b;
 
     if (filename == NULL)
     {
         return (0);
     }
-    file = open(filename, O_RDONLY);
-    if (file == -1)
+    f = open(filename, O_RDONLY);
+    if (f == -1)
     {
         return (0);
     }
-    container = malloc(letters);
-    if (container == NULL)
+    b = malloc(letters);
+    if (b == NULL)
     {
-        return (NULL);
+        return (0);
     }
-    i = read(file, container, letters);
-    container[i] = '\0';
-    write(STDOUT_FILENO, container, i);
-    close(file);
+    i = read(f, b, letters);
+    b[i] = '\0';
+    write(STDOUT_FILENO, b, i);
+    close(f);
     return (i);
 }
