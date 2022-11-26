@@ -21,12 +21,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	str = malloc(letters);
-	if (cont == NULL)
+	if (str == NULL)
 	{
 		return (0);
 	}
 	i = read(file, str, letters);
-	cont[i] = '\0';
+	str[i] = '\0';
 	write(STDOUT_FILENO, str, i);
 	close(file);
 	return (i);
