@@ -3,7 +3,7 @@
  * read_textfile-reads text and prints it to POSX
  * @filename:file to be opened
  * @letters:number of letters to be printed
- * Return:nbr of letters that could be printed
+ * Return:nbr of letters that could be printed.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
